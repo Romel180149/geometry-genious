@@ -17,7 +17,7 @@
     <!-- main container -->
     <div class="flex flex-col lg:flex-row">
       <!-- shape container -->
-      <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-48">
+      <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Triangle card -->
         <div class="card card-compact w-96 bg-base-100 shadow-xl">
           <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
@@ -32,7 +32,7 @@
                 id="traingle-height">
               <span class="ml-2">cm</span>
             </p>
-            <p class="text-2xl">Area: <span class="" id="triangle-area">cm<sup>2</sup> </span></p>
+            <p class="text-2xl">Area: <span id="triangle-area">cm<sup>2</sup> </span></p>
 
             <div class="card-actions ">
               <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
@@ -54,7 +54,7 @@
                 id="rectangle-length">
               <span class="ml-2">cm</span>
             </p>
-            <p class="text-2xl">Area: <span class="" id="rectangle-area">cm<sup>2</sup> </span></p>
+            <p class="text-2xl">Area: <span id="rectangle-area">cm<sup>2</sup> </span></p>
 
             <div class="card-actions ">
               <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
@@ -76,21 +76,42 @@
                 id="parallelogram-height">
               <span class="ml-2">cm</span>
             </p>
-            <p class="text-2xl">Area: <span class="" id="parallelogram-area">cm<sup>2</sup> </span></p>
+            <p class="text-2xl">Area: <span id="parallelogram-area">cm<sup>2</sup> </span></p>
 
             <div class="card-actions ">
               <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
             </div>
           </div>
         </div>
+        <!-- Ellipse card -->
+        <div class="card card-compact w-96 bg-base-100 shadow-xl">
+          <figure><img src="./images/parallelogram.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Ellipse</h2>
+            <p>Area A = Π ab </p>
+            <p>
+              <input type="text" class="border text-xl bg-gray-200 w-20 px-2" placeholder="large" name=""
+                id="ellipse-major-radius">
+              <span class="ml-2">cm</span>
+              <input type="text" class="border text-xl bg-gray-200 w-20 px-2" placeholder="short" name=""
+                id="ellipse-minor-radius">
+              <span class="ml-2">cm</span>
+            </p>
+            <p class="text-2xl">Area: <span id="ellipse-area">cm<sup>2</sup> </span></p>
+
+            <div class="card-actions ">
+              <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
 
       </div>
 
-<!-- area calculator -->
-<div class="w-[400px]">
-  <div class="text-4xl">Area calculator</div>
-</div>
-    </div> 
+    </div>
+    <!-- area calculator -->
+    <div class="w-[400px]">
+      <div class="text-4xl">Area calculator</div>
+    </div>
   </main>
   <script src="./Scripts/calculator.js"></script>
 </body>
